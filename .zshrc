@@ -118,3 +118,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland --disable-gpu"
+
+alias vim="nvim"
+
+# Set current folder node version
+eval "$(fnm env --use-on-cd)"
+
