@@ -1,0 +1,22 @@
+#input {
+	background-color: #1c2128;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 0;
+	color: #fff;
+}
+
+#scroll {
+	background-color: #1c2128;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-top-width: 0;
+	color: rgba(255, 255, 255, 0.5);
+	/*font-family: "Roboto Mono Nerd Font";*/
+	font-family: "emoji-font";
+}
+
+#entry:selected {
+	background-color: rgb(20, 142, 255);
+	color: #bcbcbc;
+}
+
+
