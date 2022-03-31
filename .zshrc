@@ -6,15 +6,14 @@
 source ~/Git/zsh-snap/znap.zsh  # Start Znap
 
 # `znap prompt` makes your prompt visible in just 15-40ms!
+#znap prompt sindresorhus/pure
+#znap prompt agnoster/agnoster-zsh-theme
 znap prompt sindresorhus/pure
 
 # `znap source` automatically downloads and starts your plugins.
-znap source marlonrichert/zsh-autocomplete
-#znap source zsh-users/zsh-autosuggestions
+#znap source marlonrichert/zsh-autocomplete
+znap source zsh-users/zsh-autosuggestions
 znap source zsh-users/zsh-syntax-highlighting
-
-
-
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -89,7 +88,7 @@ ZSH_THEME=""
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,6 +120,10 @@ source $ZSH/oh-my-zsh.sh
 alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland --disable-gpu"
 
 alias vim="nvim"
+
+alias sway="sway > /var/log/sway.log 2>&1"
+
+alias fake-webcam="python3 ~/Developer/Linux-Fake-Background-Webcam/fake.py --no-background --no-foreground --background-blur 50"
 
 # Set current folder node version
 eval "$(fnm env --use-on-cd)"

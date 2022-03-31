@@ -1,0 +1,45 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Roboto Mono Nerd Font";
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#workspaces button {
+    padding: 0 2px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+#workspaces button.focused {
+    color: #fff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#custom-spotify,
+#tray,
+#mode,
+#language,
+#temperature {
+    padding: 0 6px;
+    margin-left: 6px;
+}
+
+#network.disconnected {
+    background: #f53c3c;
+}
+
+

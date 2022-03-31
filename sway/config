@@ -23,7 +23,8 @@ set $menu wofi --show=drun --lines=5 --prompt=""
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/denis/Pictures/f36-day.png fill
 output * scale 2
 #
 # Example configuration:
@@ -206,17 +207,7 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+    swaybar_command waybar
 }
 
 # Hide title bars and set borders
@@ -227,6 +218,20 @@ default_border pixel 2
 input * {
     repeat_rate 60
     repeat_delay 200
+    xkb_options grp:caps_toggle,grp_led:caps
+    xkb_capslock disable
+    xkb_layout "us,ru"
 }
 
+# Night shift
+exec wlsunset -l 53.56 -L 9.89
+
+# Notification Daemon
+exec swaync
+
+# Toggle control center
+bindsym $mod+Shift+n exec swaync-client -t -sw
+
+
 include /etc/sway/config.d/*
+
