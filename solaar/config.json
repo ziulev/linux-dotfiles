@@ -26,6 +26,8 @@
     "_name": "MX Master 3 Wireless Mouse",
     "_sensitive": {
       "dpi": true,
+      "dpi-sliding": true,
+      "mouse-gestures": false,
       "smart-shift": true
     },
     "_unitId": "87BB2BA3",

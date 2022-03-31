@@ -128,3 +128,5 @@ alias fake-webcam="python3 ~/Developer/Linux-Fake-Background-Webcam/fake.py --no
 # Set current folder node version
 eval "$(fnm env --use-on-cd)"
 
+export DISPLAY=$WAYLAND_DISPLAY
+
