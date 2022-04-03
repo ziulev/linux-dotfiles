@@ -32,9 +32,8 @@
         "spacing": 0
     },
     "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+	"format": "{:%a, %b %d %C%y %H:%M}",
+	"on-click": "swaync-client -t -sw"
     },
     "cpu": {
         "format": "{usage}% ",

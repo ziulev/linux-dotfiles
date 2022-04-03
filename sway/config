@@ -25,7 +25,8 @@ bindsym $mod+Control+Space exec sh /bin/wofi-emoji.sh
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/denis/Pictures/f36-day.png fill
+#output * bg /home/denis/Pictures/f36-day.png fill
+output * bg /home/denis/Pictures/marc-kleen.jpg fill
 output * scale 2
 #
 # Example configuration:
@@ -213,7 +214,7 @@ exec wlsunset -l 53.56 -L 9.89
 exec swaync
 
 # Toggle control center
-bindsym $mod+Shift+n exec swaync-client -t -sw
+bindsym $mod+n exec swaync-client -t -sw
 
 # Media keys
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
