@@ -1,3 +1,6 @@
+-- Show line numbers
+vim.wo.number = true
+
 -- vim.api.nvim_command('set noswapfile')
 
 vim.o.completeopt = "menuone,noselect"
@@ -27,6 +30,9 @@ vim.wo.signcolumn = 'yes'
 
 --Set colorscheme
 vim.o.termguicolors = true
+require("github-theme").setup({
+    theme_style = "dimmed",
+})
 
 --Remap space as leader key
 vim.api.nvim_set_keymap('', '<Space>', '<Nop>', { noremap = true, silent = true })
